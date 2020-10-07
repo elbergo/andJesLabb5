@@ -7,9 +7,8 @@ public class Die {
         value = (int) Math.random(); // Överflödig kod
     }*/
 
-    public int DieRoll() {
+    public void DieRoll() {
         value = (int)(Math.random()*6+1);
-        return value;
     }
 
     /*public int DieReroll() {
