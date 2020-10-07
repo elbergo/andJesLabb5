@@ -1,6 +1,5 @@
 package com.company;
 
-import kyh.labs.lab4.TollFeeCalculator;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
