@@ -40,24 +40,24 @@ public class YatziMain {
                     System.out.println("You got YATZI! in " + ds[0].value + "'s");
                     return;
                 } else if (iturn != 2) { //Here we check if there is no Yatzy: then we check what turn we are on and asks the player if we want to continue or not
-                    System.out.println("Want to throw again? (y for yes, anything else for no)");
-                    Scanner sc = new Scanner(System.in);
-                    if (sc.next().equals("y")) {
-                        ++iturn;
-                    }
-                } else {
-                    System.out.println("Game over! Want to play again?");
-                    Scanner sc = new Scanner(System.in);
-                    if (sc.next().equals("y")) {
-                        iturn = 0;
+                        System.out.println("Want to throw again? (y for yes, anything else for no)");
+                        Scanner sc = new Scanner(System.in);
+                        if (sc.next().equals("y")) {
+                            ++iturn;
+                        }
                     } else {
-                        gameIsOn = !gameIsOn;
-                        break;
+                        System.out.println("Game over! Want to play again?");
+                    Scanner sc = new Scanner(System.in);
+                        if (sc.next().equals("y")) {
+                            iturn = 0;
+                        } else {
+                            gameIsOn = !gameIsOn;
+                            break;
+                        }
                     }
                 }
             }
         }
-    }
 
 
     public static void main(String[] args) {
