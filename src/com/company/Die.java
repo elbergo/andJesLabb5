@@ -19,4 +19,3 @@ public class Die {
         return "Dice shows " + value;
     }
 }
-
