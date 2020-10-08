@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class YatziMain {
 
     public static Die[] dice;
-    public static int iTurn = 0;
+    public static int turn = 0;
 
     private static boolean isYatzi(Die[] dice) {
         //changed var name
@@ -29,8 +29,8 @@ public class YatziMain {
     }
 
     private static void startGame() {
-        while (iTurn < 3) {
-            System.out.println("Starting turn " + (iTurn + 1) + " of 3, rolling dice.");
+        while (turn < 3) {
+            System.out.println("Starting turn " + (turn + 1) + " of 3, rolling dice.");
             for (int i = 0; i < dice.length; i++) {
                 dice[i].DieRoll();
                 //dice[i].value = 5; //Test if yatzi work
@@ -43,18 +43,18 @@ public class YatziMain {
             if (isYatzi(dice)) {
                 System.out.println("You got YATZI! in " + dice[0].value + "'s");
                 return;
-            } else if (iTurn != 2) { //Here we check if there is no Yatzy: then we check what turn we are on and asks the player if we want to continue or not
+            } else if (turn != 2) { //Here we check if there is no Yatzy: then we check what turn we are on and asks the player if we want to continue or not
                 System.out.println("Want to throw again? (y for yes, anything else for no)");
                 Scanner sc = new Scanner(System.in);
                 if (sc.next().equals("y")) {
-                    ++iTurn;
+                    ++turn;
 
                 }
             } else {
                 System.out.println("Game over! Want to play again?");
                 Scanner sc = new Scanner(System.in);
                 if (sc.next().equals("y")) {
-                    iTurn = 0;
+                    turn = 0;
                 } else {
                     break;
                 }
