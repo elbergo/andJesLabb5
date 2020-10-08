@@ -6,12 +6,12 @@ import java.util.Scanner;
 public class YatziMain {
 
     public static Die[] dice;
-    public static int iturn = 0;
+    public static int iTurn = 0;
 
     private static boolean isYatzi(Die[] dice) {
         //changed var name
-        for (int j = 1; j < 5; j++) {
-            if (dice[j].value != dice[j - 1].value) {
+        for (int y = 1; y < 5; y++) {
+            if (dice[y].value != dice[y - 1].value) {
                 return false; // lagt till en break
             }
         }
@@ -29,8 +29,8 @@ public class YatziMain {
     }
 
     private static void startGame() {
-        while (iturn < 3) {
-            System.out.println("Starting turn " + (iturn + 1) + " of 3, rolling dice.");
+        while (iTurn < 3) {
+            System.out.println("Starting turn " + (iTurn + 1) + " of 3, rolling dice.");
             for (int i = 0; i < dice.length; i++) {
                 dice[i].DieRoll();
                 //dice[i].value = 5; //Test if yatzi work
@@ -43,18 +43,18 @@ public class YatziMain {
             if (isYatzi(dice)) {
                 System.out.println("You got YATZI! in " + dice[0].value + "'s");
                 return;
-            } else if (iturn != 2) { //Here we check if there is no Yatzy: then we check what turn we are on and asks the player if we want to continue or not
+            } else if (iTurn != 2) { //Here we check if there is no Yatzy: then we check what turn we are on and asks the player if we want to continue or not
                 System.out.println("Want to throw again? (y for yes, anything else for no)");
                 Scanner sc = new Scanner(System.in);
                 if (sc.next().equals("y")) {
-                    ++iturn;
+                    ++iTurn;
 
                 }
             } else {
                 System.out.println("Game over! Want to play again?");
                 Scanner sc = new Scanner(System.in);
                 if (sc.next().equals("y")) {
-                    iturn = 0;
+                    iTurn = 0;
                 } else {
                     break;
                 }
