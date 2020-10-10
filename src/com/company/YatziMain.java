@@ -7,9 +7,9 @@ public class YatziMain {
 
     public static Die[] dice;
     public static int turn = 0;
+    public static boolean startGame = true;
 
     private static boolean isYatzi(Die[] dice) {
-        //changed var name
         for (int y = 1; y < 5; y++) {
             if (dice[y].value != dice[y - 1].value) {
                 return false; // lagt till en break
@@ -20,7 +20,6 @@ public class YatziMain {
     }
 
 
-
     private static void listDice() {  //listar upp 5 tärningar, startar spelet
         dice = new Die[5];
         for (int d = 0; d < 5; d++) {
@@ -28,7 +27,8 @@ public class YatziMain {
         }
     }
 
-    private static void startGame() {
+    public static void startGame() {
+        System.out.println("Welcome to YATZI!");
         while (turn < 3) {
             System.out.println("Starting turn " + (turn + 1) + " of 3, rolling dice.");
             for (int i = 0; i < dice.length; i++) {
@@ -36,9 +36,6 @@ public class YatziMain {
                 //dice[i].value = 5; //Test if yatzi work
                 System.out.println(i + ": " + dice[i].getString());
             }
-
-
-            //YATZI
 
             if (isYatzi(dice)) {
                 System.out.println("You got YATZI! in " + dice[0].value + "'s");
@@ -56,6 +53,7 @@ public class YatziMain {
                 if (sc.next().equals("y")) {
                     turn = 0;
                 } else {
+                    startGame = !startGame;
                     break;
                 }
             }
@@ -64,7 +62,6 @@ public class YatziMain {
 
 
     public static void main(String[] args) {
-        System.out.println("Welcome to YATZI!");
         listDice();
         startGame();
 

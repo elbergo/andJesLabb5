@@ -7,11 +7,13 @@ public class YatziTest {
     @Test
     void isYatziWhenAllDiceMatches() {
         Die[] dice = new Die[5];
-        for(Die die: dice) {
-            die.value = 6;
+        for (int y = 1; y < 5; y++) {
+            dice[y] = new Die();
+            //dice[y].value(5);
         }
-        //Assert something?
+        //assertTrue(YatziMain.startGame(dice));
     }
+
 
     @Test
     void isNotYatziWhenOneDieIsNotMatchingTheOther() {
