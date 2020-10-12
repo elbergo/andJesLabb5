@@ -85,6 +85,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="YatziTest.isNotYatziWhenOneDieIsNotMatchingTheOther" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="andJesLabb5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.YatziTest" />
+      <option name="METHOD_NAME" value="isNotYatziWhenOneDieIsNotMatchingTheOther" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="YatziTest.isYatziWhenAllDiceMatches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="andJesLabb5" />
       <extension name="coverage">
@@ -105,6 +121,7 @@
       <list>
         <item itemvalue="Application.YatziMain" />
         <item itemvalue="JUnit.YatziTest.isYatziWhenAllDiceMatches" />
+        <item itemvalue="JUnit.YatziTest.isNotYatziWhenOneDieIsNotMatchingTheOther" />
         <item itemvalue="Application.YatziOriginal" />
       </list>
     </recent_temporary>
@@ -133,31 +150,31 @@
       <screen x="1920" y="0" width="2560" height="1040" />
     </state>
     <state x="3432" y="182" width="816" height="729" key="#Intentions/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602074530355" />
-    <state x="636" y="218" key="FileChooserDialogImpl" timestamp="1602318863763">
+    <state x="636" y="218" key="FileChooserDialogImpl" timestamp="1602494677279">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2980" y="275" key="FileChooserDialogImpl/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602063051298" />
-    <state x="636" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602318863763" />
-    <state width="1493" height="212" key="GridCell.Tab.0.bottom" timestamp="1602321269690">
+    <state x="636" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602494677279" />
+    <state width="1493" height="229" key="GridCell.Tab.0.bottom" timestamp="1602500333478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1234" height="350" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602077687488" />
-    <state width="1493" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602321269690" />
-    <state width="1493" height="212" key="GridCell.Tab.0.center" timestamp="1602321269690">
+    <state width="1493" height="229" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602500333478" />
+    <state width="1493" height="229" key="GridCell.Tab.0.center" timestamp="1602500333478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1234" height="350" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602077687488" />
-    <state width="1493" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602321269690" />
-    <state width="1493" height="212" key="GridCell.Tab.0.left" timestamp="1602321269689">
+    <state width="1493" height="229" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602500333478" />
+    <state width="1493" height="229" key="GridCell.Tab.0.left" timestamp="1602500333478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1234" height="350" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602077687488" />
-    <state width="1493" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602321269689" />
-    <state width="1493" height="212" key="GridCell.Tab.0.right" timestamp="1602321269690">
+    <state width="1493" height="229" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602500333478" />
+    <state width="1493" height="229" key="GridCell.Tab.0.right" timestamp="1602500333478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1234" height="350" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1602077687488" />
-    <state width="1493" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602321269690" />
+    <state width="1493" height="229" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602500333478" />
     <state width="1493" height="263" key="GridCell.Tab.1.bottom" timestamp="1602318590799">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

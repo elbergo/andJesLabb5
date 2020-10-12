@@ -46,7 +46,8 @@ public class YatziMain {
                 if (sc.next().equals("y")) {
                     ++turn;
 
-                }
+
+                }else break; // avslutar programmet om man ej vill spela mer
             } else {
                 System.out.println("Game over! Want to play again?");
                 Scanner sc = new Scanner(System.in);
