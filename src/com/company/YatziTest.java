@@ -1,27 +1,30 @@
+
 package com.company;
 
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class YatziTest {
     @Test
     void isYatziWhenAllDiceMatches() {
         Die[] dice = new Die[5];
-        for (int y = 1; y < 5; y++) {
+        for (int y = 0; y < 5; y++) {
             dice[y] = new Die();
-            //dice[y].value(5);
+            dice[y].value = 5;
         }
-        //assertTrue(YatziMain.startGame(dice));
+        assertTrue(YatziMain.isYatzi(dice));
     }
 
 
     @Test
     void isNotYatziWhenOneDieIsNotMatchingTheOther() {
         Die[] dice = new Die[5];
-        for(Die die: dice) {
-            die.value = 6;
+        for (int y = 0; y < 5; y++) {
+            dice[y] = new Die();
+            dice[y].DieRoll();
         }
-        dice[5].value = 1;
-        //Assert something?
+        assertFalse(YatziMain.isYatzi(dice));
     }
 }
+
