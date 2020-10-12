@@ -2,7 +2,8 @@
 1. Separera isYatzi funktionen, den måste vara av typen Boolean för att kunna köra
 AssertTrue test.
 
-2. Vi behöver avsluta programmet när vi anger annat än Y, där har vi startGame = !startGame
+2. Vi behöver avsluta programmet när vi anger annat än Y, där har vi startGame = !startGame !!LÖST!!
+
 
 3. if (isYatzi(dice)) {
    System.out.println("You got YATZI! in " + dice[0].value + "'s");
